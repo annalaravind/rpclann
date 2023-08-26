@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RP CLAN</title>
+  </head>
+  <body>
+    <button class="popup_Button" id="popupButton">Click to Login</button>
+    <div class="pop_up" id="popup">
+      <div class="popup_content" id="popupContent">
+        <div class="switch-buttons">
+          <button id="loginBtn">Login</button>
+          <button id="signupBtn">Sign Up</button>
+        </div>
+        <div class="form" id="formDetails">
+          <!-- Login Form -->
+          <form id="loginForm">
+            <h6>Email</h6>
+            <input type="email" id="loginEmail" placeholder="Email" required />
+            <h6>Password</h6>
+            <div class="input1">
+              <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+                required
+              />
+              <div class="toggle_button1" id="toggle1">show</div>
+            </div>
+            <button class="bbb" type="submit">Login</button>
+            <span>
+              <p>Don't you have an Account ?</p>
+              <button id="alterSign">Sign Up</button>
+            </span>
+          </form>
+
+          <!-- Signup Form -->
+          <form id="signupForm" class="signUpStyle">
+            <h6>Full Name</h6>
+            <input type="text" id="signupName" placeholder="Name" required />
+            <h6>Email</h6>
+            <input type="email" id="signupEmail" placeholder="Email" required />
+            <h6>Password</h6>
+            <div class="input2">
+              <input
+                type="password"
+                id="signupPassword"
+                placeholder="Password"
+                required
+              />
+              <div class="toggle_button2" id="toggle2">show</div>
+            </div>
+            <div class="conditions">
+              <div>• should have Capital letter</div>
+              <div>• should have atleast one Number</div>
+              <div>• should have atleast 5 Characters</div>
+            </div>
+            <h6>Contact</h6>
+            <input type="tel" id="signupMobile" placeholder="Mobile" required />
+            <button type="submit">Sign Up</button>
+            <button class="back" id="back" type="submit">&#8592; Back</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+/* PopUp Button */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Popup styling */
+.popup_Button{
+    border:1px solid white;
+    width:150px;
+    height:50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.popup_Button:hover{
+    font-size: 21px;
+    width:152px;
+    height:52px;
+    box-shadow: 0px 0px 10px black;
+    transition: 300ms;
+}
+
+.pop_up {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup_content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    height:400px;
+    margin: 100px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.switch-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.switch-buttons button {
+    border: none;
+    width:160px;
+    height:30px;
+    padding: 4px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    color: black;
+}
+
+#loginBtn{
+    color: red;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#signupBtn{
+    border-bottom: 1px solid black;
+}
+
+.form {
+    display: block;
+    height:300px;
+    margin-top: 30px;
+}
+
+.form h6{
+    margin-bottom: 1px;
+    margin-left: 3px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form .input1{
+    display: flex;
+}
+
+.form .input1 .toggle_button1{
+    font-size: 12px;
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    padding-top: 13px;
+    padding-left: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.form .bbb {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+}
+
+.form .bbb:hover {
+    background-color: #2980b9;
+}
+
+.form span{
+    display: flex;
+    margin-top: 10px;
+}
+
+.form span p{
+    height:20px;
+    margin-top: 5px;
+    font-size: 13px;
+    margin-left: 25px;
+}
+
+.form span button{
+    border: none;
+    width:70px;
+    margin-left: 5px;
+    font-size: 16px;
+    background: transparent;
+    color: black;
+    font-weight: 600;
+}
+.form span button:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+
+.signUpStyle{
+    height:400px;
+}
+
+.signUpStyle h6{
+    margin-left: 2px;
+    margin-bottom: 1px;
+}
+
+.signUpStyle .conditions{
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.signUpStyle .input2 {
+    display: flex;
+}
+
+.signUpStyle .input2 .toggle_button2 {
+    font-size: 12px;
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    padding-top: 14px;
+    padding-left: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.signUpStyle button{
+    border: none;
+    margin-top: 10px;
+    width:100%;
+    height:40px;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+}
+
+.signUpStyle button:hover{
+    background-color: #2980b9;
+}
+
+.signUpStyle .back{
+    width:100px;
+    height: 40px;
+    margin-left: 105px;
+    font-size: 17px;
+}
+
+
+/* Responsive styling */
+@media screen and (max-width: 480px) {
+    .popup_content {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .popup_content {
+        width: 330px;
+    }
+    .signUpStyle .back{
+        margin-left: 95px;
+    }
+}
